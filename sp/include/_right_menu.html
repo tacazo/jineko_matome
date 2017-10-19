@@ -1,0 +1,59 @@
+<div class="menu-background"></div>
+<div id="gNavSp" class="menu-content" style="top: 0px; width: 80%; min-width: 140px;">
+	<div style="float:right" class="closeSwitch last" id="new-my-button" onClick="location.href='index.html'">✕</div>
+	<div id="menu-list" class="sliding-menu" style="padding-bottom: 60px;">
+		<div class="sliding-menu-wrapper">
+			<h2 class="menu-title">Menu</h2>
+			<p class="pd10"><img src="/images/ec_banner02.png" style="max-width:100%;height:auto;" /></p>
+			<ul class="mm-listview menu-panel-root" id="menu-panel-gqqu1">
+				<!--<li class="first"><div class="mm-navbar" style="text-align:center;"><a class="mm-title">Menu</a></div></li>-->
+				<li class="menu_toppage"><a href="#"><img src="/images/common/icon_home.png" alt="トップページ" style="width:24px;" align="absmiddle" /> トップページ</a></li>
+				<li class="even"><a href="#">相談する</a></li>
+				<li><a href="/sp/user/mypage">ログイン/新規会員登録</a></li>
+				<li class="even"><a href="#">フリーマガジン申し込み</a></li>
+				
+				<li class="color06"><span>その他</span></li>
+				<li class="even"><a href="#">マイページ</a></li>
+				<li><a href="#">登録情報変更</a></li>
+				<li class="even">
+					<a href="#" class="level_tit on">初めてご利用の方へ</a>
+					<ul class="sub_menu" id="sub_menu">
+						<li><a href="#">ジネコとは</a></li>
+						<li><a href="#">ジネコ会員のメリット</a></li>
+						<li><a href="#">ジネコの使い方</a></li>
+					</ul>
+				</li>
+				<li><a href="#">ジネコアーカイブス</a></li>
+				<li class="even"><a href="#">利用規約</a></li>
+				<li><a href="#">プライバシーポリシー</a></li>
+				<li class="even"><a href="#">運営会社</a></li>
+				<li><a href="#">お問い合わせ</a></li>
+				<li class="even"><a href="#">RSS購読</a></li>
+				<li class="color06"><span>公式アカウント・ブログ</span></li>
+				<li class="share_btns last"><a href="#"><img src="/images/btn_face.png" alt="" /> <img src="/images/btn_twitter.png" alt="" /> <img src="/images/btn_line.png" alt="" /></a></li>
+			</ul>
+		</div>
+		<div class="closeSwitch last" id="new-my-button" onClick="location.href='index.html'">✕</div>
+	</div>
+	
+</div>
+<script>
+$(document).ready(function(){ 
+
+	var h=$(window).height();
+	var d=$(document).height();
+	$(".menu-background").css("height",d);
+	$("#gNavSp").css("height",h);
+}); 
+	
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".level_tit").click(function(){
+		$("#sub_menu").slideToggle("slow");
+		$(this).toggleClass("active");
+		return false;
+	});
+	 
+});
+</script>

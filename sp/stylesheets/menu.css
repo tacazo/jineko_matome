@@ -1,0 +1,136 @@
+/* CSS Document */
+.right_menus{
+	display:none;
+}
+.menu-background{
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 100000000001;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 1000000px;
+    height: 100%;
+}
+
+.menu-content{
+    background: #fbf5f5;
+    border-color: rgba(0,0,0,.1);
+    color: rgba(0,0,0,.7);
+    width: 80%;
+    min-width: 140px;
+    max-width: 440px;
+    float: right;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100000000002;
+    height: 100%;
+    overflow-y: scroll;
+    /*padding: 0 20px;*/
+    /*text-indent: 20px;*/
+}
+.menu-content .menu-title{
+	font-size:20px;
+	font-weight:bold;
+	color:#000;
+	margin:15px 10px 5px 10px;
+	text-align:center;
+}
+.menu-content li.menu_toppage{
+	background-color:#fff;
+}
+.menu-content li.menu_toppage a{
+	border:none;
+	/*background:url(/images/common/icon_home.png) no-repeat left 50%;
+	background-size:24px auto;
+	padding-left:30px;*/
+}
+#gNavSp .color05 {
+    background-color: #90908e;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+}
+#gNavSp .color06 {
+    background-color: #f683a4;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.menu-content li a{
+	color: inherit;
+    display: block;
+    /*padding: 10px 0px 10px 0px;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-decoration: none;
+    border-bottom: 1px solid #DBDBDB;
+    margin: 0 20px;
+	background:url(/images/common/arrow_right02.png) no-repeat right 50%;
+	background-size:10px auto;
+}
+.menu-content li a.level_tit{
+	font-weight:bold;
+	color:#000;
+	border:none;
+	background:url(/images/common/arrow_down02.png) no-repeat right 50%;
+	background-size:auto 10px;
+}
+.menu-content li a.active{
+	background:url(/images/common/arrow_right02.png) no-repeat right 50%;
+	background-size:10px auto;
+	border-bottom: 1px solid #DBDBDB;
+}
+#gNavSp .color05 a,
+#gNavSp .color06 a{
+	background:none;
+}
+.menu-content li.share_btns img{
+	width:50px;
+	margin-right:5px;
+}
+.menu-content li.share_btns a{
+	background:none;
+}
+.menu-content li .sub_menu{
+	background-color:#fff;
+}
+.menu-content li .sub_menu a{
+	background:url(/images/common/arrow_right03.png) no-repeat right 50%;
+	background-size:10px auto;
+	padding-left:15px;
+}
+.menu-content li span{
+    color: inherit;
+    display: block;
+    padding: 10px 10px 10px 20px;
+    margin: 0;
+    /*padding: 0 20px;*/
+}
+
+
+.menu-content .back{
+	margin: 0px;
+}
+#new-my-button {
+	background-color: #000;
+    color: #FFF;
+    display: block;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    /* margin-right: 20px; */
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    z-index: 100000000003;
+    font-size: 30px;
+    margin-top: 10px;
+}

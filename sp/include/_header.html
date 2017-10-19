@@ -1,0 +1,61 @@
+<header class="header">
+	<a class="icon_search icon_searchA"><img src="/images/common/icon_search.png" height="24" onclick="showSearch()" /></a>
+    <a class="icon_search icon_close_pink" style="display:none;"><img src="/images/common/close_pink.png" height="24" onclick="hideSearch()" /></a>
+	<a class="icon_menu" href="index_menus.html"><img src="/images/common/icon_menu.png" height="24" /></a>
+	<p class="logo"><a href="index.html"><img src="/images/common/img_hd_logo.png" height="48" /></a></p>
+</header>
+
+<div class="searchDiv" style="display:none;">
+<div class="searchContetn">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="tdInput"><input type="text" placeholder="気になる記事を探せます" /></td>
+            <td width="80"><input type="button" value="検索" onclick="hideSearch()" /></td>
+        </tr>
+    </table>
+    <p class="mt20 mb20 keywordP"><img src="/images/common/icon_search_gray-03.png" height="24" align="absmiddle" />&nbsp;よく調べられているキーワード</p>
+    <div class="keywordDiv">
+        <ul>
+            <li><a href="#"># 離乳食</a></li>
+            <li><a href="#"># 新生児</a></li>
+            <li><a href="#"># 1ヶ月</a></li>
+            <li><a href="#"># 2ヶ月</a></li>
+            <li><a href="#"># 内祝い</a></li>
+            <li><a href="#"># 4が月</a></li>
+            <li><a href="#"># ○○○○○○○</a></li>
+            <li><a href="#"># ○○○○○○○</a></li>
+            <li><a href="#"># 内祝い</a></li>
+            <li><a href="#"># 4が月</a></li>
+            <li><a href="#"># 離乳食</a></li>
+            <li><a href="#"># 新生児</a></li>
+            <li><a href="#"># 1ヶ月</a></li>
+            <li><a href="#"># 2ヶ月</a></li>
+            <hr class="cb" />
+        </ul>
+    </div>
+</div>
+    <div class="blackDiv">&nbsp;</div>
+
+</div>
+<script>
+    function showSearch(){
+	    $('.icon_searchA').hide();
+		$('.icon_close_pink').show();
+		$('.searchDiv').show();
+		$('.blackDiv').show();
+		var bodyHeight = document.body.clientHeight - $('.header').height();
+		$('.blackDiv').css('height',bodyHeight)	;
+	}
+	function hideSearch(){
+	    $('.icon_searchA').show();
+		$('.icon_close_pink').hide();
+		$('.searchDiv').hide();	
+		$('.blackDiv').hide();
+	}
+	$(".keywordDiv ul li a").click(function(){
+	  $('.icon_searchA').show();
+		$('.icon_close_pink').hide();
+		$('.searchDiv').hide();	
+		$('.blackDiv').hide();
+	});
+</script>
